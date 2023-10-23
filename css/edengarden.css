@@ -1,0 +1,236 @@
+*{
+  margin: 0px; /*sets margin to zero */
+  padding: 0px; /*No padding space surrounding this container */
+  background-color: #F6F0E1; /* Changes the color of the website background to the selected color. */
+  font-family: "Outfit"; /* The most prioritized font is outfit, because that is the font I used for all containers outside of the heading */
+   font:#3C320E; /* Changes all font on site to this color. */
+  
+}
+
+h1{
+     text-align: center; /*Centers h1 */
+     
+}
+
+
+nav ul {
+    width: 100%; /*  */
+    list-style-type: none; /* Removes bullets */
+    display:inline-flex; /* Makes flex container behave like in-line text block. */
+    justify-content: center; /* Centers the navigation bar.*/
+    gap:65px; /* Increased spacing between navigation links. */
+    font-size: 26px; /* Changes font size to 26px */
+    color: #3C320E; /* Color of the font. */
+    padding: 20px; /*Adds space around container.*/
+   
+
+}
+
+body {
+
+    margin: 0px; /*no margins. */
+    padding: 0px;/*no padding */
+    font-family:"Outfit";/*Primary Font */
+
+
+
+
+
+}
+/* ----BLOG PORTION */
+
+/*#blog {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column ;
+    padding: 40px;
+    border-bottom: 1px #3C320E;
+
+
+
+}
+*/
+
+
+/*.blog-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+*/
+.blog-container {
+
+    display:flex; /* Display is flex, container adapts to changes in size  */
+    justify-content: center; /* Justifies content to center of the page */
+    align-items: center;
+    margin:20px 0px;
+}
+.blog-containerr {
+
+    width:75%; /*Width of container takes of 75% of page width. */
+    display:flex;/* Display is flex, container adapts to changes in size  */
+    justify-content: left;/* Justifies content to left of the page */
+    align-items: center; /*Aligns items to the center */
+    margin:20px ; /* 20 px of space around the element on all sides.*/
+    background-color: #FFFDFD; /*Changes background color*/
+
+}
+
+
+.blog-box{
+
+    width:auto; /*Sets width to auto fit */
+    height:fit-content; /*Sets height to fit content (image) */
+    background-color: #FFFDFD; /*Sets background color of blog box to this color*/
+    border: 3px solid #3C320E; /*Applies 1px solid dark brown border */
+
+}
+
+.blog-box .blog-img{
+    width: auto;/*Sets width to auto fit */
+    height:auto;/*Sets height to auto fit */
+}
+
+.blog-text {      
+    padding: 30px; /*adds 30 px of space around blog text box */
+    display: flex;/* Display is flex, container adapts to changes in size  */
+    flex-direction:column; /*This changes the length of the label? Will likely change, because I want my posts to sit beside each other.*/
+    background-color: #FFFDFD; /*Back ground color of text box */
+}
+.blog-text span {
+    font-weight: 400; /*Font thickness is 400*/
+    font:#3C320E; /*color of font */
+    font-size: 0.9rem; /* 0.9 of default font size. */
+
+}
+
+.blog-text .blog-title{
+
+    font-weight: 400; /* font thickness is 400 /*
+    font:#3C320E; /*font color */
+}
+
+.h2-main{
+
+ font:#3C320E; /* Changes font color */
+ text-decoration-line: underline; /*Adds underline */
+/* text-shadow: 0px 4px 4px 0px rgba(0,0,0, 0.25);*/
+
+}
+
+footer {   
+    
+/*Lines 131-133: Sets width of footer to width of the page. Applies 1px solid dark brown border, and a brown background color with 75% opacity.*/
+    
+    width:100%;
+    border:1px solid #3C320E; 
+    background-color:rgba(150, 137, 126, 0.76); /*Chnages background color of footer */
+    margin-top: 20px; /* 20 px of space around the element on top. */
+}
+
+footer nav ul{
+
+font-size: 14px;/* Changes font size to 14 */
+justify-content: right; /* moves content to the right */
+text-transform:uppercase; /* Sets text to all caps */
+
+}
+input[type=text]{
+
+color: #696864;/*colors text */
+display: inline; /*displays in-line. Idk it helps with positioning the form boxes next to each other*/
+
+}
+input[type=submit]{
+
+    color: white; /*colors text */
+    background-color:#3C320E; /*sets background color of subscribe box to dark brown */
+    display:inline;  /*displays in-line. Idk it helps with positioning the form boxes next to each other*/
+    
+}
+
+input[type=text], input[type=submit] { 
+    
+    /* Lines 156-157 positions form boxes next to each other. */
+
+    float:left;
+    display:inline; 
+   
+}
+
+
+/*--WIDGET */
+/*.widget {
+
+    display:flex;
+    flex-direction: column;
+   justify-content: right;
+   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  
+}*/
+
+
+ .pintlogo
+{
+  width: 60px;/*Width of image. */
+  height: 52px;  /*Height of image. */
+  bottom: 963px; /*Vertical Positioning of image. */
+  left: 76px;/*Horizontal Positioning of image. */
+ 
+
+}
+
+
+/*ABOUT PAGE*/
+
+.about{
+    text-align: center; /*Centers image */
+    position:relative;/*Positioning of image. Allows for text to be in front of image */
+   
+}
+
+.about-title{
+
+  position:absolute; /* Lines 195-198 positions contact us text to be infront of image. */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font: #FFFDFD; /*font color of contact title text */
+
+}
+.about-p
+{
+
+    padding: 20px;/* adds 20px of space around the container */
+    background-color: #FFFDFD; /*text box color */
+   
+}
+
+/* CONTACT US */
+
+.contact{
+  text-align: center; /*Centers image */
+   position:relative;/*Positioning of image. Allows for text to be in front of image */
+   
+}
+.contact-title{
+
+  position:absolute; /* Lines 195-198 positions contact us text to be infront of image. */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font: #FFFDFD; /*font color of contact title text */
+
+}
+/*EVENTS */
+.calendar
+{
+
+  text-align:  center; /*centers calendar */
+}
+
+
