@@ -19,40 +19,65 @@
         <link href='https://fonts.googleapis.com/css?family=Ephesis' rel='stylesheet'>
         <link href='https://fonts.googleapis.com/css?family=Outfit' rel='stylesheet'>
         <link rel="stylesheet" href="css/edengarden.css"> 
-    </head>
-   <body>
-        <header>
-            <h1>
-              <div class="headerimg">
-                  <img src="images/EElogo.png" alt="Eden's Embrace Logo" >
-              </div> 
-              <img src="images/Eden’s Embrace (1).png" alt="Eden's Embrace Header">
-              
-          </h1>
+          <style>
+      
+        .card{
+
+            color:darkslateblue;
+            text-align: center;
+
+        }
+        main{
           
-            <nav>
-              <ul>
-                 <li><a href="index.html">Home</a></li>
-                 <li> <a href="about.html">About Us</a></li>
-                 <li><a href="loccare.html">Loc Care</a></li>
-                 <li><a href="events.html">Events</a></li>
-                 <li><a href="contact.html">Contact Us</a></li>
-                 <!--<form action="https://wp.zybooks.com/form-viewer.php">
-                  <input type="text" placeholder="Search..">
-                  <button type="submit"><i class="fa fa-search"></i></button>
-                 </form>-->
-              </ul>   
-            </nav>
-         
- 
-      </header>
+           
+            background-color:#FFFDFD;
+
+        }
+        input[type=submit]{
+
+        color: white; /*colors text */
+        background-color:darkslateblue; /*sets background color of  box to purple */
+        /*displays in-line. Idk it helps with positioning the form boxes next to each other*/
+       
+        }
+
+        .form-contact{
+
+            text-align: center;
+        }
+        p{
+            text-align: center;
+        }
+        </style>
+    </head>
+  <body>
+        
+<div class="header">
+    <h1>Eden's  <img src="images/vectordesign.png" alt="Eden's Embrace Logo" height="200" >  Embrace</h1>
+    
+     <nav>
+                <ul>
+                   <li><a href="index.html">Home</a></li>
+                   <li> <a href="about.html">About Me</a></li>
+                   <li><a href="loccare.html">Posts</a></li>
+                   <li><a href="events.html">Events</a></li>
+                   <li>Contact Me</li>
+                   <!--<form action="https://wp.zybooks.com/form-viewer.php">
+                    <input type="text" placeholder="Search..">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                   </form>-->
+                </ul>   
+              </nav>
+  </div>
+  
         <main>
             <div class="contact">
                 <h2>
-                    <img src="images/Contactuslocpic.jpg" alt="Woman with short locs for contact us page. Credit: kaiya on Twitter"  width="764" height="470"><!--I will change the dimensions later.-->
-                    <div class="contact-title">Contact Us</div>
+                  
+                    <div class=card>
+                        Contact Me </div>
                 </h2>
-                <p>We look forward to receiving feedback from our community! Fill out and submit the form  below, and we'll reach out as soon as possible.</p>
+                <p>I look forward to receiving feedback from the community! Fill out and submit the form  below, and I'll reach out as soon as possible.</p>
             </div>
 
             <div class="form-contact">
@@ -77,36 +102,17 @@
             </div>
         </main>
        
-        <footer>
-            <div class="pintlogo">
-                <a href="https://www.pinterest.com/edensembrace/"><img src="images/pinterest.png" alt="Pinterest logo/link to Eden's Embrace official Pinterest Page" width="60"></a>
-                
-            </div>
-            
-                <form action="https://wp.zybooks.com/form-viewer.php " method="POST">
-                    <p>
-                        <label for="email"> </label>
-                        <input type="text" id="email" name="email" placeholder="email address" style="background-color: #FFFDFD;">
-                    </p>
-              
-           
-                    <p>
-                        <input type="submit" value="Subscribe" >
-                    </p>
-                
-          
-                 </form>
-            
-              <nav>
-                <ul>
-                   <li><a href="index.html">Home</a></li>
-                   <li> <a href="about.html">About Us</a></li>
-                   <li><a href="loccare.html">Loc Care</a></li>
-                   <li><a href="events.html">Events</a></li>
-                   <li><a href="contact.html">Contact Us</a></li>
-                </ul>   
-              </nav>
-            
-        </footer>
+             
+        <div class="footer">
+            <nav >
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li> <a href="about.html">About Me</a></li>
+                            <li><a href="loccare.html">Posts</a></li>
+                            <li><a href="events.html">Events</a></li>
+                            <li><a href="contact.html">Contact Me</a></li>
+                        </ul>   
+                    </nav>
+        </div>
     </body>
 </html>
