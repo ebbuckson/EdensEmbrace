@@ -15,114 +15,93 @@
           gtag('js', new Date());
         
           gtag('config', 'G-HBPTCDJ03T');
-</script>
+        </script>
+
+    <style>            
+            input[type=submit]{
+            
+                color: white; /*colors text */
+                background-color:rgba(172, 133, 208, 0.76); /*sets background color of subscribe box to dark brown */
+                 /*displays in-line. Idk it helps with positioning the form boxes next to each other*/             
+            }
+            
+            
+            /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+            @media screen and (max-width: 800px) {
+              .leftcolumn, .rightcolumn {   
+                width: 100%;
+                padding: 0;
+              }
+            }
+    </style>
          <link href='https://fonts.googleapis.com/css?family=Ephesis' rel='stylesheet'>
         <link href='https://fonts.googleapis.com/css?family=Outfit' rel='stylesheet'>
         <link rel="stylesheet" href="css/edengarden.css"> 
     </head>
-   <body>
-        <header>
-              <h1>
-                <div class="headerimg">
-                    <img src="images/EElogo.png" alt="Eden's Embrace Logo" >
-                </div> 
-                <img src="images/Eden’s Embrace (1).png" alt="Eden's Embrace Header">
-                
-            </h1>
-            
-              <nav>
-                <ul>
-                   <li><a href="index.html">Home</a></li>
-                   <li> <a href="about.html">About Us</a></li>
-                   <li><a href="loccare.html">Loc Care</a></li>
-                   <li><a href="events.html">Events</a></li>
-                   <li><a href="contact.html">Contact Us</a></li>
-                   <!--<form action="https://wp.zybooks.com/form-viewer.php">
-                    <input type="text" placeholder="Search..">
-                    <button type="submit"><i class="fa fa-search"></i></button>
-                   </form>-->
-                </ul>   
-              </nav>
-           
+  <body>
 
-        </header>
-        <main>
-            <div>
-                       
-                <div class="blog-container">
+<div class="header">
+  <h1>Eden's  <img src="images/vectordesign.png" alt="Eden's Embrace Logo" height="200" >  Embrace</h1>
+  
+   <nav>
+              <ul>
+                 <li>Home</li>
+                 <li> <a href="about.html">About Me</a></li>
+                 <li><a href="loccare.html">Posts</a></li>
+                 <li><a href="events.html">Events</a></li>
+                 <li><a href="contact.html">Contact Me</a></li>
+                 <!--<form action="https://wp.zybooks.com/form-viewer.php">
+                  <input type="text" placeholder="Search..">
+                  <button type="submit"><i class="fa fa-search"></i></button>
+                 </form>-->
+              </ul>   
+            </nav>
+</div>
 
-                    <!--box one---->
-                    <div class="blog-box">
-                        <!--img-->
-                        <div class="blog-img">
-                            <img src="images/Mainpagearticle.jpg" alt="Image of 3 microlocs. Image Credit: queentyquana on Pintrest" width=714px height=354px>
-                        </div>
-                        <!---TEXT-->
-                        <div class="blog-text">                      
-                            <span><a href="loccare.html">Loc Care</a>/ Maintanence</span>
-                           <h2> <a href="maintanencem.html">Which Maintenance Method Is for You?</a></h2>
-                          
-                           
-                        </div>
-                    </div>
-                </div>
-                
-            </section>
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+        <h2>Which Maintenance Method Is for You?</h2>
+        <span class="tag tag-lav">Hair Care</span>
 
-            <section>
-
-                <div class="h2-main">
-                    <h2>Recent Posts</h2>
-                </div>
-                
-                <div class="blog-containerr">
-                    <div class="blog-box"> 
-
-                    </div>
-                    <div class="blog-box blog-img">
-                            <img src="images/recentpost1.png" alt="Locs in a ponytail. Recent post 1." width=250px>
-                        </div>
-                        <!---TEXT-->
-                        <div class="blog-text">                      
-                            <span><a href="loccare.html">Loc Care</a>/ Maintanence</span>
-                            <h2><a href="uglystagearticle.html">The "Ugly Phase": Understanding the Journey</a></h2>
-
-                        </div>
-
-                </div>
-                <div class="blog-containerr">
-                    <div class="blog-box"> 
-
-                    </div>
-                    <div class="blog-box blog-img">
-                            <img src="images/Recentpost2.png" alt="Person with short locs. Recent post 2." width=250px>
-                        </div>
-                        <!---TEXT-->
-                        <div class="blog-text">                      
-                            <span><a href="loccare.html">Loc Care</a>/ Maintanence</span>
-                            <h2><a href="locmyths.html">Common Misconceptions About Locs</a></h2>
-
-                        </div>
-
-                </div>
-
-            </section>
-
-    
-            <!--FIX WIDGET, then add -->
-
-        </main>
-    
-        <footer>
-            <div class="pintlogo">
-                <a href="https://www.pinterest.com/edensembrace/"><img src="images/pinterest.png" alt="Pinterest logo/link to Eden's Embrace official Pinterest Page" width="60"></a>
-                
+            <div style="width: 330px;" class="fakeimg">
+            <a href="maintanencem.html"><img style="margin-left: 20px;" src="images/IMG_7100.JPG" alt="Which Maintenance Method Is for You article image"width="250" height="270" ></a>
             </div>
-            
-                <form action="https://wp.zybooks.com/form-viewer.php " method="POST">
+            <p style="font-size: 19px;">Whether you've recently started your dreadlock journey or have been rocking them for a while, understanding the proper maintenance methods is important for preserving your dreadlocks' beauty and integrity. Here are some of the most common loc maintenance techniques...<a href="maintanencem.html">Read more</a></p>
+    </div>
+    <div class="card"> 
+        <h2>Common Misconceptions About Locs</h2>
+        <span class="tag tag-lav">Hair Care</span>
+        <div style="width: 330px;" class="fakeimg" >
+            <a href="locmyths.html"> <img style="margin-left: 20px;"src="images/IMG_6538 (1).JPG" alt="Common Misconceptions About Locs article pic" width="250" height="270"></a>
+        </div> 
+        <p style="font-size: 19px;">In the world of haircare, locs have a rich history and cultural significance. Yet, misconceptions often surround this unique and beautiful hairstyle. Let's unravel the truth behind the myths, shedding light on the beauty, diversity, and care of locs ! <a href="locmyths.html">Read more</a></p>
+ 
+     </div>
+    <div class="card">
+        <h2>The "Ugly Phase": Understanding the Journey</h2>
+        <span class="tag tag-pur">Personal</span>
+        <div style="width: 330px;" class="fakeimg">
+        <a href="uglystagearticle.html"><img style="margin-left: 20px;" src="images/IMG_5475.PNG" alt="Ugly Phase: Understanding the Journey article pic" width="250"> </a>
+        </div>
+        <p style="font-size: 19px;">Many people who have locs experience a period of dissatisfaction with their appearance, commonly referred to as the "ugly stage." While it is important to discourage negative... <a href="uglystagearticle.html">Read more</a></p>
+    </div>
+ </div>
+  <div class="rightcolumn">
+
+  
+    <div class="card">
+      <h3 style="text-align: center;">Click here to follow my Pinterest!</h3>
+      <div style="background-color:white; "class="fakeimg"><a href="https://www.pinterest.com/edensembrace/"><img style="margin-left:50px; width: 100px;  height: 100px;  position: relative; overflow: hidden; border-radius: 50%;" src="images/purplepinteresticon.jpg" alt="Image link to Pinterest" height="200" width="200"></a></div><br>
+      
+    </div>
+    <div class="card">
+      <h3>Sign up for Newsletter</h3>
+      <p style="text-align: center; font-size: 14px;">Stay in the loop! Sign up for notifcations on updates on events and new posts! </p>
+       <form action="https://wp.zybooks.com/form-viewer.php " method="POST">
                     <p>
-                        <label for="email"> </label>
-                        <input type="text" id="email" name="email" placeholder="email address" style="background-color: #FFFDFD;">
+                        <label for="email">Email: </label>
+                        <input type="text" id="email" name="email" placeholder="email address" >
                     </p>
               
            
@@ -132,17 +111,28 @@
                 
           
                  </form>
-            
-              <nav>
+    </div>
+    <div class="card">
+
+        <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+        <div class="elfsight-app-a63e6874-d62a-44ec-aa0e-00d7b5a5b2c2" data-elfsight-app-lazy></div>
+
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+   <nav >
                 <ul>
                    <li><a href="index.html">Home</a></li>
-                   <li> <a href="about.html">About Us</a></li>
-                   <li><a href="loccare.html">Loc Care</a></li>
+                   <li> <a href="about.html">About Me</a></li>
+                   <li><a href="loccare.html">Posts</a></li>
                    <li><a href="events.html">Events</a></li>
-                   <li><a href="contact.html">Contact Us</a></li>
+                   <li><a href="contact.html">Contact Me</a></li>
                 </ul>   
               </nav>
-            
-        </footer>
-    </body>
+</div>
+
+</body>
+
 </html>
