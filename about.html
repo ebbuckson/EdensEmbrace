@@ -19,44 +19,76 @@
          <link href='https://fonts.googleapis.com/css?family=Ephesis' rel='stylesheet'>
         <link href='https://fonts.googleapis.com/css?family=Outfit' rel='stylesheet'>
         <link rel="stylesheet" href="css/edengarden.css"> 
+         <style>
+            .about{
+            text-align: center; /*Centers image */
+            position:relative;/*Positioning of image. Allows for text to be in front of image */
+            margin-top: 20px;
+            
+            }
+            .about-title{
+    
+            position:absolute; /* Lines 195-198 positions contact us text to be infront of image. */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #FFFDFD; /*font color of contact title text */
+            font-size: 35px;
+            
+    
+            }
+            main{
+              
+          
+                background-color:#FFFDFD;
+                
+                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.9);
+    
+            }
+            input[type=submit]{
+    
+            color: white; /*colors text */
+            background-color:rgba(172, 133, 208, 0.76); /*sets background color of  box to purple */
+            /*displays in-line. Idk it helps with positioning the form boxes next to each other*/
+            }
+          
+            .about-p{
+
+                font-size: 20px;
+            }
+    
+            </style>
     </head>
     
-    <body>
-     <header>
-           <h1>
-             <div class="headerimg">
-                 <img src="images/EElogo.png" alt="Eden's Embrace Logo" >
-             </div> 
-             <img src="images/Eden’s Embrace (1).png" alt="Eden's Embrace Header">
-             
-         </h1>
-         
-           <nav>
-             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li> <a href="about.html">About Us</a></li>
-                <li><a href="loccare.html">Loc Care</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-                <!--<form action="https://wp.zybooks.com/form-viewer.php">
-                 <input type="text" placeholder="Search..">
-                 <button type="submit"><i class="fa fa-search"></i></button>
-                </form>-->
-             </ul>   
-           </nav>
-        
-
-     </header>
-
-     <body>
+   <body>
+     
+<div class="header">
+    <h1>Eden's  <img src="images/vectordesign.png" alt="Eden's Embrace Logo" height="200" >  Embrace</h1>
+    
+     <nav>
+                <ul>
+                   <li><a href="index.html">Home</a></li>
+                   <li>About Me</li>
+                   <li><a href="loccare.html">Posts</a></li>
+                   <li><a href="events.html">Events</a></li>
+                   <li><a href="contact.html">Contact Me</a></li>
+                   <!--<form action="https://wp.zybooks.com/form-viewer.php">
+                    <input type="text" placeholder="Search..">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                   </form>-->
+                </ul>   
+              </nav>
+  </div>
+  
         <main>
 
          <div class="about">
             <h2>  
                 <div class="img">
-                <img src="images/Aboutuslocpic.jpg" alt="Ginger locs picture for about us page. Credit:RaJaArre on Pinterest" width="664" height="470">
+                <img style="border-style: solid; border-width: 5px;  border-color: darkslateblue;  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);""
+            src="images/IMG_5740.jpg" alt="About Me Picture" width="664" height="470">
                  </div>
-              <div class="about-title" >About Us</div>
+              <div class="about-title" >About Me</div>
             </h2> <!--I will change the dimensions later.-->
             <div class="about-p">Towards the end of 2021, I began my loc journey. I experienced watching my hair sprout and evolve after much trial and error. I documented my hair throughout each stage,  conversed with other African-American women about our respective loc journeys, and researched techniques and myths regarding hair care. 
 
@@ -66,37 +98,18 @@
          </div>   
          
         </main>
-        <footer>
-            <div class="pintlogo">
-                <a href="https://www.pinterest.com/edensembrace/"><img src="images/pinterest.png" alt="Pinterest logo/link to Eden's Embrace official Pinterest Page" width="60"></a>
-                
-            </div>
             
-                <form action="https://wp.zybooks.com/form-viewer.php " method="POST">
-                    <p>
-                        <label for="email"> </label>
-                        <input type="text" id="email" name="email" placeholder="email address" style="background-color: #FFFDFD;">
-                    </p>
-              
-           
-                    <p>
-                        <input type="submit" value="Subscribe" >
-                    </p>
-                
-          
-                 </form>
-            
-              <nav>
-                <ul>
-                   <li><a href="index.html">Home</a></li>
-                   <li> <a href="about.html">About Us</a></li>
-                   <li><a href="loccare.html">Loc Care</a></li>
-                   <li><a href="events.html">Events</a></li>
-                   <li><a href="contact.html">Contact Us</a></li>
-                </ul>   
-              </nav>
-            
-        </footer>
+        <div class="footer">
+            <nav >
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li> <a href="about.html">About Me</a></li>
+                            <li><a href="loccare.html">Loc Care</a></li>
+                            <li><a href="events.html">Events</a></li>
+                            <li><a href="contact.html">Contact Me</a></li>
+                        </ul>   
+                    </nav>
+        </div>
 
     </body>
 </html>
