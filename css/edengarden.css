@@ -20,7 +20,7 @@ body {
   }
   
   h1{
-     color:rgba(145, 108, 180, 0.791);
+     color:rgba(77, 37, 114, 0.791);
     font-weight: 400;
 
     
@@ -35,7 +35,7 @@ nav ul{
        justify-content: center; /* Centers the navigation bar.*/
        gap:65px; /* Increased spacing between navigation links. */
        font-size: 20px; /* Changes font size to 26px */
-       color: #3C320E; /* Color of the font. */
+       color:rgba(77, 37, 114, 0.791); /* Color of the font. */
        padding: 20px;
     font-family: Spectra;
    
