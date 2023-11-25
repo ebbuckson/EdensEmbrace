@@ -33,11 +33,12 @@
             background-color:#FFFDFD;
 
         }
-        input[type=submit]{
+        button{
 
         color: white; /*colors text */
         background-color:darkslateblue; /*sets background color of  box to purple */
         /*displays in-line. Idk it helps with positioning the form boxes next to each other*/
+        margin-bottom: 20px; 
        
         }
 
@@ -81,24 +82,19 @@
             </div>
 
             <div class="form-contact">
-                <form action="https://localhost/dataForm.php" method="POST">
-                    <p>
-                        <label for="Name">Name (Required)</label>
-                        <input type="text" id="Name" name="Name">
-                    </p>
-                    <p>
-                        <label for="emaila">Email (Required)</label>
-                        <input type="text" id="emaila" name="emaila">
-                    </p>
-                    <p>
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="4" cols="20"> 
-                        </textarea>
-                    </p>
-                    <p>
-                        <input type="submit" value="Submit">
-                    </p>
-                </form>
+                
+                    <!--we will start here-->
+                        <form id="contact" method="POST" action="https://localhost/dataForm.php">
+                        <h5>Name</h5>
+                        <input name="Name" placeholder=" Name..." style="border-radius: 3px;">
+                        <h5>Email</h5>
+                        <input name="email" placeholder="Email Address..." style="border-radius: 3px;">
+                        <h5>Message</h5>
+                        <textarea name="message" placeholder="Message..." style="border-radius: 3px;" rows="4" cols="20"></textarea>
+                        <br>
+                        <button name="button1" type="submit" style="width: 100px; height: 20px; margin-top: 
+                        1rem;">Submit</button>
+                        </form>
             </div>
         </main>
        
