@@ -1,25 +1,35 @@
-
 <?php
-// Esra Buckson 11/12/2023
-define('DB_HOST', 'localhost');
+//Esra Buckson 11/25/2023
+define('DB_HOST', 'localhost'); 
 define('DB_USER', 'root');
-define('DB_PASS', '');
-define('DB_NAME', 'dataForm');
+define('DB_PASS', ''); 
+define('DB_NAME', 'dataform');
 $conn = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
 
-if ($conn->connect_error) {
+if($conn->connect_error) {
     die('Connection Failed ' . $conn->connect_error);
 }
 
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $name = $_POST["input1"];
-    $email = $_POST["input2"];
-    $message = $_POST["input3"];
-    $query = $conn->prepare("INSERT INTO user_inquiries (Name, Email, Message) VALUES (?,?,?)");
-    $query->bind_param('sss', $name, $email, $message);
-    $query->execute();
-    $conn->close();
+
+if($_SERVER['REQUEST_METHOD'] == 'POST')
+    {
+$name = $_POST["Name"];
+$email = $_POST['email'] ?? 'default@example.com';
+$message = $_POST["message"];
+
+
+if (empty($name) || empty($email) || empty($email) || empty($message)) {
+    // At least one variable is empty
+    echo "Please fill in all the required fields.";
+    return;
 }
+$query = $conn->prepare("INSERT INTO user_inquiries (Name, Email, Message) 
+VALUES (?,?,?)");
+$query->bind_param('sss', $name, $email, $message);
+$query->execute();
+$conn->close();
+    }
+
 ?>
 
 <!DOCTYPE html>
@@ -32,22 +42,24 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <script>
     </script>
     </head>
-
     <body>
     <!--we will start here-->
-    <form id="form1" method="POST">
+        <form id="contact" method="POST" action="dataForm.php">
         <h1>Contact Me</h1>
         <h5>Name</h5>
-        <input name="input1" placeholder=" Name..." style="border-radius: 3px;">
-        <h5>Email Address</h5>
-        <input name="input2" placeholder="Email Address..." style="border-radius: 3px;">
+        <input name="Name" placeholder=" Name..." style="border-radius: 3px;">
+        <h5>Email</h5>
+        <input name="email" placeholder="Email Address..." style="border-radius: 3px;">
         <h5>Message</h5>
-        <textarea name="input3" placeholder="Message..." style="border-radius: 3px;" rows="4" cols="20"></textarea>
+        <textarea name="message" placeholder="Message..." style="border-radius: 3px;" rows="4" cols="20"></textarea>
         <br>
-    <button name="button1" type="submit" style="width: 100px; height: 20px; margin-top: 
-    1rem;">Submit</button>
-    </form>
+        <button name="button1" type="submit" style="width: 100px; height: 20px; margin-top: 
+        1rem;">Submit</button>
+        </form>
     </body>
+
+
+</html>
 
 
 
