@@ -34,7 +34,7 @@ nav ul{
        display:inline-flex; /* Makes flex container behave like in-line text block. */
        justify-content: center; /* Centers the navigation bar.*/
        gap:65px; /* Increased spacing between navigation links. */
-       font-size: 20px; /* Changes font size to 26px */
+       font-size: 25px; /* Changes font size to 26px */
        color:rgba(77, 37, 114, 0.791); /* Color of the font. */
        padding: 20px;
     font-family: Spectra;
