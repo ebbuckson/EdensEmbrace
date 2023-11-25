@@ -2,7 +2,7 @@
     box-sizing: border-box;
   }
 body {
-    font-family: Outfit;
+    font-family: Spectra;
     padding: 20px;
     background: lavender ;
   }
@@ -37,7 +37,7 @@ nav ul{
        font-size: 20px; /* Changes font size to 26px */
        color: #3C320E; /* Color of the font. */
        padding: 20px;
-    font-family: "Outfit";
+    font-family: Spectra;
    
    
    }
