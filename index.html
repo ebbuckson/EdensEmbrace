@@ -18,11 +18,13 @@
         </script>
 
     <style>            
-            input[type=submit]{
-            
-                color: white; /*colors text */
-                background-color:rgba(172, 133, 208, 0.76); /*sets background color of subscribe box*/                            
-            }
+            button{
+
+            color: white; /*colors text */
+            background-color:rgba(111, 65, 154, 0.791); /*sets background color of subscribe box to dark brown */
+             /*displays in-line. Idk it helps with positioning the form boxes next to each other*/
+         
+}
             
             
             /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
@@ -94,21 +96,14 @@
       
     </div>
     <div class="card">
-      <h3>Sign up for Newsletter</h3>
-      <p style="text-align: center; font-size: 14px;">Stay in the loop! Sign up for notifcations on updates on events and new posts! </p>
-       <form action="https://wp.zybooks.com/form-viewer.php " method="POST">
-                    <p>
-                        <label for="email">Email: </label>
-                        <input type="text" id="email" name="email" placeholder="email address" >
-                    </p>
-              
-           
-                    <p>
-                        <input type="submit" value="Subscribe" >
-                    </p>
-                
-          
-                 </form>
+      <h3 style="text-align: center;">Sign up for Newsletter</h3>
+      <p style="text-align: center; font-size: 16px;">Stay in the loop! Sign up for notifcations on updates on events and new posts! </p>
+         <form action="https://localhost/newsletter.php" method="POST">
+             <h5style="font-size: 14px>Email:</h5>
+                <input name="Email" placeholder="Email Address..." style="border-radius: 3px;">
+            <button name="button1" type="submit" style="width: 100px; height: 20px; margin-top: 
+            1rem;">Subscribe</button>
+        </form>
     </div>
     <div class="card">
 
