@@ -1,5 +1,5 @@
 <?php
-//Esra Buckson 11/25/2023
+//Esra Buckson 11/26
 define('DB_HOST', 'localhost'); 
 define('DB_USER', 'root');
 define('DB_PASS', ''); 
@@ -44,18 +44,8 @@ $conn->close();
     </head>
     <body>
     <!--we will start here-->
-        <form id="contact" method="POST" action="dataForm.php">
-        <h1>Contact Me</h1>
-        <h5>Name</h5>
-        <input name="Name" placeholder=" Name..." style="border-radius: 3px;">
-        <h5>Email</h5>
-        <input name="email" placeholder="Email Address..." style="border-radius: 3px;">
-        <h5>Message</h5>
-        <textarea name="message" placeholder="Message..." style="border-radius: 3px;" rows="4" cols="20"></textarea>
-        <br>
-        <button name="button1" type="submit" style="width: 100px; height: 20px; margin-top: 
-        1rem;">Submit</button>
-        </form>
+        <p> Form submitted successfully. Thank you so much! </p> <break>
+        <a href="https://ebbuckson.github.io/EdensEmbrace/">Click here to return to Home</a>
     </body>
 
 
@@ -69,4 +59,3 @@ $conn->close();
 
 
 
-</html>
