@@ -48,11 +48,11 @@ nav ul{
    
    
    }
-   a:hover {
+  nav ul a:hover {
      color: red;
    }
    
-   a:visited {
+  nav ul a:visited {
      color: green;
    }
    a{
