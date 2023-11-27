@@ -148,7 +148,7 @@ nav ul{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font: #FFFDFD; /*font color of contact title text */
+  color: #FFFDFD; /*font color of contact title text */
 
 }
 .about-p
