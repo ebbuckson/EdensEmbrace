@@ -52,7 +52,7 @@ nav ul{
      color: red;
    }
    
-  nav ul a:visited {
+   a:visited {
      color: green;
    }
    a{
