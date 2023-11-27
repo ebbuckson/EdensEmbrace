@@ -78,6 +78,7 @@ nav ul{
      background-color:	#f2e5ff;
      width: 100%;
      padding: 20px;
+     margin-top: 20px;
    }
    
    /* Add a card effect for articles */
@@ -114,7 +115,7 @@ nav ul{
     align-self: flex-start;
     padding: .25em .75em;
     border-radius: 1em;
-    font-size: .75rem;
+    font-size: .90rem;
   }
   
   .tag + .tag {
