@@ -133,7 +133,31 @@ nav ul{
     background: linear-gradient(to bottom, #804497, #d8a7eb);
     color: white;
   }
+  /*  POSTS */
 
+  article img {
+    opacity:0.9;
+
+    height:450px;
+    width:500px;
+   margin-left: 250px;
+   border: solid 3px;
+   border-color: darkslateblue;
+   }
+  
+   section h3{
+
+    text-align: center;
+   }
+  article section   {
+
+    font-size: 18px;
+  }
+
+  article ol {
+
+    font-size: 18px;
+  }
 /*ABOUT PAGE*/
 
 .about{
