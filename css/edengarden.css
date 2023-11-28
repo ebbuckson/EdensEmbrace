@@ -56,7 +56,7 @@ nav ul{
    a:visited {
      color: green;
    }
-   a:hover{
+  p a:hover{
     color:red;
    }
    a{
