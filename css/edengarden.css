@@ -162,6 +162,14 @@ nav ul{
 
     font-size: 18px;
   }
+
+ .social-sharing{
+
+    margin-top: 30px;
+    align-content: center;
+    text-align: center;
+    font-size: 16px;
+  }
  button{
 
     color: white; /*colors text */
