@@ -163,6 +163,11 @@ nav ul{
     font-size: 18px;
   }
 
+  #nobullet{
+
+    list-style-type: none;
+  }
+
  .social-sharing{
 
     margin-top: 30px;
